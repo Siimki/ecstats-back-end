@@ -28,6 +28,7 @@ func main() {
 	h := handlers.NewHandler(dbConn)
 
 	r.Get("/api/stats", h.GetSummary)
+	r.Get("/api/homepagestats", h.GetHomepageRaceStats)
 
 	log.Println("Server started on: 1337")
 	http.ListenAndServe(":1337", r)
