@@ -1,0 +1,286 @@
+id	date	name	location	distance	category	race_type	created_at	race_website	verified	series
+18	2007-05-27	26. Tartu Rattaralli	Tartu	126	B	Road Race	2025-01-29 12:26:21.802358	https://tartumaraton.ee/		
+19	2007-09-16	10. Tartu Rattamaraton	Otepää	87	B	MTB	2025-01-29 12:53:02.712682	https://tartumaraton.ee/		
+17	2008-05-25	27. Tartu Rattaralli	Tartu	133	B	Road Race	2025-01-29 10:43:16.198679	https://tartumaraton.ee/		
+20	2008-09-21	11. Tartu Rattamaraton	Otepää	89	B	MTB	2025-01-29 12:53:02.712682	https://tartumaraton.ee/		
+16	2009-05-31	28. Tartu Rattaralli	Tartu	125	B	Road Race	2025-01-28 14:27:36.487616	https://tartumaraton.ee/		
+21	2009-09-20	12. Tartu Rattamaraton	Otepää	89	B	MTB	2025-01-29 12:53:02.712682	https://tartumaraton.ee/		
+15	2010-05-30	29. Tartu Rattaralli	Tartu	133	B	Road Race	2025-01-28 14:25:12.738304	https://tartumaraton.ee/		
+22	2010-09-19	13. Tartu Rattamaraton	Otepää	89	B	MTB	2025-01-29 12:53:02.712682	https://tartumaraton.ee/		
+14	2011-05-29	30. Tartu Rattaralli	Tartu	135	B	Road Race	2025-01-28 14:21:29.121067	https://tartumaraton.ee/		
+23	2011-09-18	14. Tartu Rattamaraton	Otepää	89	B	MTB	2025-01-29 12:53:02.712682	https://tartumaraton.ee/		
+13	2012-05-27	31. Tartu Rattaralli	Tartu	137	B	Road Race	2025-01-28 14:16:46.11825	https://tartumaraton.ee/		
+24	2012-09-16	15. Tartu Rattamaraton	Otepää	89	B	MTB	2025-01-29 12:53:02.712682	https://tartumaraton.ee/		
+12	2013-06-02	32. Tartu Rattaralli	Tartu	135	B	Road Race	2025-01-28 14:11:04.672353	https://tartumaraton.ee/		
+25	2013-09-15	16. Tartu Rattamaraton	Otepää	89	B	MTB	2025-01-29 12:53:02.712682	https://tartumaraton.ee/		
+11	2014-06-01	33. Tartu Rattaralli	Tartu	133	B	Road Race	2025-01-28 14:07:40.413515	https://tartumaraton.ee/		
+26	2014-09-21	17. Tartu Rattamaraton	Otepää	89	B	MTB	2025-01-29 12:53:02.712682	https://tartumaraton.ee/		
+71	2015-05-03	15. Mulgi Rattamaraton	Mulgi		C	MTB	2025-01-31 19:19:32.223965	https://www.rattamaratonid.ee/		Bosch
+147	2015-05-06	Filter Temposari I etapp	Jüri	26.3	C	TTP	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+72	2015-05-16	18. Tallinna Rattamaraton	Tallinn		C	MTB	2025-01-31 19:19:32.223965	https://www.rattamaratonid.ee/		Bosch
+148	2015-05-20	Filter Temposari II etapp	Tabasalu	16.93	C	TT	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+10	2015-05-31	34. Tartu Rattaralli	Tartu	142	B	Road Race	2025-01-28 13:59:30.485889	https://tartumaraton.ee/		
+149	2015-06-03	Filter Temposari III etapp	Pirita	9.72	C	TT	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+73	2015-06-07	17. Rõuge Rattamaraton	Rõuge		C	MTB	2025-01-31 19:19:32.223965	https://www.rattamaratonid.ee/		Bosch
+150	2015-06-17	Filter Temposari IV etapp	Jüri	26.3	C	TTP	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+74	2015-06-21	13. Rakvere Rattamaraton	Rakvere		C	MTB	2025-01-31 19:19:32.223965	https://www.rattamaratonid.ee/		Bosch
+75	2015-07-12	15. Rakke Rattamaraton	Rakke		C	MTB	2025-01-31 19:19:32.223965	https://www.rattamaratonid.ee/		Bosch
+76	2015-07-26	15. Elva Rattamaraton	Elva		C	MTB	2025-01-31 19:19:32.223965	https://www.rattamaratonid.ee/		Bosch
+151	2015-07-29	Filter Temposari V etapp	Tabasalu	16.93	C	TT	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+77	2015-08-09	16. Otepää Rattamaraton	Otepää		C	MTB	2025-01-31 19:19:32.223965	https://www.rattamaratonid.ee/		Bosch
+152	2015-08-19	Filter Temposari VI etapp	Pirita	9.72	C	TT	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+78	2015-08-22	Alutaguse Rattamaraton	Alutaguse		C	MTB	2025-01-31 19:19:32.223965	https://www.rattamaratonid.ee/		Bosch
+27	2015-09-20	18. Tartu Rattamaraton	Otepää	89	B	MTB	2025-01-29 12:53:02.712682	https://tartumaraton.ee/		
+122	2015-12-31	Bosch MTB Marathon Series GC 2015	Estonia		B	GC	2025-02-03 15:01:15.826176	https://www.rattamaratonid.ee/		Bosch
+233	2015-12-31	Estonian Cup Marathon Series GC 2015	Estonia		B	GC	2025-04-22 16:59:51.512181	https://estoniancup.ee		Estonian Cup
+79	2016-04-24	16. Elva Rattamaraton	Elva		C	MTB	2025-01-31 19:19:32.223965	https://www.rattamaratonid.ee/		Bosch
+153	2016-05-04	Filter Temposari I etapp	Jüri	26.8	C	TTP	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+80	2016-05-07	16. Mulgi Rattamaraton	Mulgi		C	MTB	2025-01-31 19:19:32.223965	https://www.rattamaratonid.ee/		Bosch
+154	2016-05-18	Filter Temposari II etapp	Kiili	12.7	C	TT	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+81	2016-05-21	2. Alutaguse Rattamaraton	Alutaguse		C	MTB	2025-01-31 19:19:32.223965	https://www.rattamaratonid.ee/		Bosch
+9	2016-05-29	35. Tartu Rattaralli	Tartu	135	B	Road Race	2025-01-28 13:52:00.636923	https://tartumaraton.ee/		
+155	2016-06-01	Filter Temposari III etapp	Pirita	9.72	C	TT	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+82	2016-06-11	18. Rõuge Rattamaraton	Rõuge		C	MTB	2025-01-31 19:19:32.223965	https://www.rattamaratonid.ee/		Bosch
+156	2016-06-15	Filter Temposari IV etapp	Jüri	26.8	C	TTP	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+83	2016-06-19	14. Rakvere Rattamaraton	Rakvere		C	MTB	2025-01-31 19:19:32.223965	https://www.rattamaratonid.ee/		Bosch
+84	2016-07-10	16. Rakke Rattamaraton	Rakke		C	MTB	2025-01-31 19:19:32.223965	https://www.rattamaratonid.ee/		Bosch
+157	2016-08-03	Filter Temposari V etapp	Kiili	12.7	C	TT	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+158	2016-08-17	Filter Temposari VI etapp	Pirita	9.72	C	TT	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+85	2016-08-20	17. Otepää Rattamaraton	Otepää		C	MTB	2025-01-31 19:19:32.223965	https://www.rattamaratonid.ee/		Bosch
+86	2016-09-04	19. Tallinna Rattamaraton	Tallinn		C	MTB	2025-01-31 19:19:32.223965	https://www.rattamaratonid.ee/		Bosch
+159	2016-09-11	Filter Temposari Finaal	Ikla	24.94	C	TT	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+28	2016-09-18	19. Tartu Rattamaraton	Otepää	89	B	MTB	2025-01-29 12:53:02.712682	https://tartumaraton.ee/		
+123	2016-12-31	Bosch MTB Marathon Series GC 2016	Estonia		B	GC	2025-02-03 15:01:15.826176	https://www.rattamaratonid.ee/		Bosch
+234	2016-12-31	Estonian Cup Marathon Series GC 2016	Estonia		B	GC	2025-04-22 16:59:51.512181	https://estoniancup.ee		Estonian Cup
+87	2017-04-23	3. Alutaguse Rattamaraton	Alutaguse		C	MTB	2025-01-31 19:19:32.223965	https://www.rattamaratonid.ee/		Bosch
+225	2017-04-29	4. Kuusalu Rattamaraton	Kuusalu		C	MTB	2025-04-22 14:33:13.504078	https://estoniancup.ee		Estonian Cup
+160	2017-05-03	Filter Temposari I etapp	Jüri	14.98	C	TT	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+226	2017-05-13	3. Põleva Kivi Rattamaraton	Illuka		C	MTB	2025-04-22 14:33:13.504078	https://estoniancup.ee		Estonian Cup
+161	2017-05-17	Filter Temposari II etapp	Kiili	25.12	C	TTP	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+88	2017-05-20	17. Mulgi Rattamaraton	Mulgi		C	MTB	2025-01-31 19:19:32.223965	https://www.rattamaratonid.ee/		Bosch
+8	2017-05-28	36. Tartu Rattaralli	Tartu	135	B	Road Race	2025-01-28 13:26:17.880603	https://tartumaraton.ee/		
+162	2017-05-31	Filter Temposari III etapp	Pirita	9.72	C	TT	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+227	2017-06-03	3. Valgehobusemäe Rattamaraton	Valgehobusemäe		C	MTB	2025-04-22 14:33:13.504078	https://estoniancup.ee		Estonian Cup
+89	2017-06-10	11. Jõelähtme Rattamaraton	Jõelähtme		C	MTB	2025-01-31 19:19:32.223965	https://www.rattamaratonid.ee/		Bosch
+132	2017-06-10	11. Jõelähtme Rattamaraton - XXL-sõit	Jõelähtme		C	MTB	2025-02-05 11:27:24.307315	https://www.rattamaratonid.ee/		Bosch
+163	2017-06-14	Filter Temposari IV etapp	Jüri	14.98	C	TT	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+90	2017-06-18	15. Rakvere Rattamaraton	Rakvere		C	MTB	2025-01-31 19:19:32.223965	https://www.rattamaratonid.ee/		Bosch
+228	2017-07-01	15. Raplamaa Rattamaraton	Raplamaa		C	MTB	2025-04-22 14:33:13.504078	https://estoniancup.ee		Estonian Cup
+91	2017-07-09	Škoda Laagri 17. Rakke Rattamaraton	Rakke		C	MTB	2025-01-31 19:19:32.223965	https://www.rattamaratonid.ee/		Bosch
+229	2017-07-15	10. Kalevipoja Rattamaraton	Kuremaa		C	MTB	2025-04-22 14:33:13.504078	https://estoniancup.ee		Estonian Cup
+164	2017-07-26	Filter Temposari V etapp	Kiili	25.12	C	TTP	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+92	2017-07-29	17. Elva Rattamaraton	Elva		C	MTB	2025-01-31 19:19:32.223965	https://www.rattamaratonid.ee/		Bosch
+165	2017-08-09	Filter Temposari VI etapp	Pirita	9.72	C	TT	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+230	2017-08-12	3. Lähte Rattamaraton	Lähte		C	MTB	2025-04-22 14:33:13.504078	https://estoniancup.ee		Estonian Cup
+93	2017-08-20	19. Rõuge Rattamaraton	Rõuge		C	MTB	2025-01-31 19:19:32.223965	https://www.rattamaratonid.ee/		Bosch
+133	2017-08-20	19. Rõuge Rattamaraton - XXL-sõit	Rõuge		C	MTB	2025-02-05 11:27:24.307315	https://www.rattamaratonid.ee/		Bosch
+231	2017-08-26	18. Otepää Rattamaraton	Otepää		C	MTB	2025-04-22 14:33:13.504078	https://estoniancup.ee		Estonian Cup
+166	2017-08-27	Filter Temposari Finaal	Ikla	24.94	C	TT	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+232	2017-09-09	18. Jõulumäe Rattamaraton	Jõulumäe		C	MTB	2025-04-22 14:33:13.504078	https://estoniancup.ee		Estonian Cup
+29	2017-09-17	20. Tartu Rattamaraton	Otepää	89	B	MTB	2025-01-29 12:53:02.712682	https://tartumaraton.ee/		
+94	2017-09-30	20. Tallinna Rattamaraton	Tallinn		C	MTB	2025-01-31 19:19:32.223965	https://www.rattamaratonid.ee/		Bosch
+134	2017-09-30	20. Tallinna Rattamaraton - XXL-sõit	Tallinn		C	MTB	2025-02-05 11:27:24.307315	https://www.rattamaratonid.ee/		Bosch
+235	2017-12-31	Estonian Cup Marathon Series GC 2017	Estonia		B	GC	2025-04-22 16:59:51.512181	https://estoniancup.ee		Estonian Cup
+124	2017-12-31	Bosch MTB Marathon Series GC 2017	Estonia		B	GC	2025-02-03 15:01:15.826176	https://www.rattamaratonid.ee/		Bosch
+95	2018-04-28	4. Alutaguse Rattamaraton	Alutaguse		C	MTB	2025-01-31 19:25:19.276188	https://www.rattamaratonid.ee/		Bosch
+167	2018-05-02	Filter Temposari I etapp	Jüri	14.98	C	TT	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+96	2018-05-06	18. Mulgi Rattamaraton	Mulgi		C	MTB	2025-01-31 19:25:19.276188	https://www.rattamaratonid.ee/		Bosch
+240	2018-05-12	4. Põleva Kivi Rattamaraton	Illuka		C	MTB	2025-04-22 17:11:17.553879	https://estoniancup.ee		Estonian Cup
+168	2018-05-16	Filter Temposari II etapp	Kiili	25.12	C	TTP	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+135	2018-05-19	21. Tallinna Rattamaraton - XXL-sõit	Tallinn		C	MTB	2025-02-05 11:50:17.838455	https://www.rattamaratonid.ee/		Bosch
+97	2018-05-19	21. Tallinna Rattamaraton	Tallinn		C	MTB	2025-01-31 19:25:19.276188	https://www.rattamaratonid.ee/		Bosch
+7	2018-05-27	37. Tartu Rattaralli	Tartu	134.6	B	Road Race	2025-01-28 13:18:52.352167	https://tartumaraton.ee/		
+169	2018-05-30	Filter Temposari III etapp	Pirita	9.72	C	TT	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+241	2018-06-02	Neolife 4. Valgehobusemäe Rattamaraton	Valgehobusemäe		C	MTB	2025-04-22 17:11:17.553879	https://estoniancup.ee		Estonian Cup
+137	2018-06-09	12. Jõelähtme Rattamaraton - XXL-sõit	Jõelähtme		B	MTB	2025-02-05 11:52:38.319607	https://www.rattamaratonid.ee/		Bosch
+98	2018-06-09	12. Jõelähtme Rattamaraton	Jõelähtme		C	MTB	2025-01-31 19:25:19.276188	https://www.rattamaratonid.ee/		Bosch
+170	2018-06-13	Filter Temposari IV etapp	Jüri	13.3	C	TT	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+242	2018-06-16	11. Kalevipoja Rattamaraton	Kuremaa		C	MTB	2025-04-22 17:11:17.553879	https://estoniancup.ee		Estonian Cup
+99	2018-06-17	16. Rakvere Rattamaraton	Rakvere		C	MTB	2025-01-31 19:25:19.276188	https://www.rattamaratonid.ee/		Bosch
+243	2018-07-07	Frank Kutter 16. Raplamaa Rattamaraton	Raplamaa		C	MTB	2025-04-22 17:11:17.553879	https://estoniancup.ee		Estonian Cup
+100	2018-07-15	Škoda Laagri 18. Rakke Rattamaraton	Rakke		C	MTB	2025-01-31 19:25:19.276188	https://www.rattamaratonid.ee/		Bosch
+171	2018-07-25	Filter Temposari V etapp	Kiili	25.12	C	TTP	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+244	2018-07-29	Rand & Tuulberg 18. Elva Rattamaraton	Elva		C	MTB	2025-04-22 17:11:17.553879	https://estoniancup.ee		Estonian Cup
+172	2018-08-08	Filter Temposari VI etapp	Maardu	9.8	C	TT	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+245	2018-08-11	1. Hauka Laada Rattamaraton	Antsla		C	MTB	2025-04-22 17:11:17.553879	https://estoniancup.ee		Estonian Cup
+136	2018-08-19	20. Rõuge Rattamaraton - XXL-sõit	Rõuge		C	MTB	2025-02-05 11:50:17.838455	https://www.rattamaratonid.ee/		Bosch
+101	2018-08-19	20. Rõuge Rattamaraton	Rõuge		C	MTB	2025-01-31 19:25:19.276188	https://www.rattamaratonid.ee/		Bosch
+246	2018-08-25	19. Jõulumäe Rattamaraton	Jõulumäe		C	MTB	2025-04-22 17:11:17.553879	https://estoniancup.ee		Estonian Cup
+173	2018-08-26	Filter Temposari Finaal	Ikla	24.94	C	TT	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+30	2018-09-16	21. Tartu Rattamaraton	Otepää	89	B	MTB	2025-01-29 12:53:02.712682	https://tartumaraton.ee/		
+247	2018-09-29	8. Karujärve Rattamaraton	Karujärve		C	MTB	2025-04-22 17:11:17.553879	https://estoniancup.ee		Estonian Cup
+125	2018-12-31	Bosch MTB Marathon Series GC 2018	Estonia		B	GC	2025-02-03 15:01:15.826176	https://www.rattamaratonid.ee/		Bosch
+236	2018-12-31	Estonian Cup Marathon Series GC 2018	Estonia		B	GC	2025-04-22 16:59:51.512181	https://estoniancup.ee		Estonian Cup
+174	2019-05-01	Filter Temposari I etapp	Jüri	14.98	C	TT	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+102	2019-05-05	19. Mulgi Rattamaraton	Mulgi		C	MTB	2025-01-31 19:25:19.276188	https://www.rattamaratonid.ee/		Bosch
+248	2019-05-11	5. Põleva Kivi Rattamaraton	Illuka		C	MTB	2025-04-23 05:03:00.050448	https://estoniancup.ee		Estonian Cup
+175	2019-05-15	Filter Temposari II etapp	Maardu	9.8	C	TT	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+103	2019-05-18	21. Rõuge Rattamaraton	Rõuge		C	MTB	2025-01-31 19:25:19.276188	https://www.rattamaratonid.ee/		Bosch
+249	2019-05-18	5. Valgehobusemäe Rattamaraton	Valgehobusemäe		C	MTB	2025-04-23 05:03:00.050448	https://estoniancup.ee		Estonian Cup
+6	2019-05-26	38. Tartu Rattaralli	Tartu	124	B	Road Race	2025-01-28 12:57:46.502954	https://tartumaraton.ee/		
+176	2019-05-29	Filter Temposari III etapp	Kiili	25.12	C	TTP	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+138	2019-06-01	5. Alutaguse Rattamaraton - XXL-sõit	Alutaguse		B	MTB	2025-02-05 12:17:12.291417	https://www.rattamaratonid.ee/		Bosch
+104	2019-06-01	5. Alutaguse Rattamaraton	Alutaguse		C	MTB	2025-01-31 19:25:19.276188	https://www.rattamaratonid.ee/		Bosch
+250	2019-06-08	9. Tallinna Rahvasõit	Tallinn		C	MTB	2025-04-23 05:03:00.050448	https://estoniancup.ee		Estonian Cup
+177	2019-06-12	Filter Temposari IV etapp	Jüri	14.98	C	TT	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+139	2019-06-15	13. Jõelähtme Rattamaraton - XXL-sõit	Jõelähtme		C	MTB	2025-02-05 12:17:12.291417	https://www.rattamaratonid.ee/		Bosch
+105	2019-06-15	13. Jõelähtme Rattamaraton	Jõelähtme		C	MTB	2025-01-31 19:25:19.276188	https://www.rattamaratonid.ee/		Bosch
+178	2019-06-19	Filter Temposari V etapp	Aruküla	19.7	C	TT	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+251	2019-07-06	17. Raplamaa Rattamaraton	Raplamaa		C	MTB	2025-04-23 05:03:00.050448	https://estoniancup.ee		Estonian Cup
+106	2019-07-14	17. Rakvere Rattamaraton	Rakvere		C	MTB	2025-01-31 19:25:19.276188	https://www.rattamaratonid.ee/		Bosch
+179	2019-07-24	Filter Temposari VI etapp	Kiili	25.12	C	TTP	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+252	2019-07-27	19. Elva Rattamaraton	Elva		C	MTB	2025-04-23 05:03:00.050448	https://estoniancup.ee		Estonian Cup
+107	2019-07-28	19. Rakke Rattamaraton	Rakke		C	MTB	2025-01-31 19:25:19.276188	https://www.rattamaratonid.ee/		Bosch
+140	2019-07-28	19. Rakke Rattamaraton - XXL-sõit	Rakke		C	MTB	2025-02-05 12:17:12.291417	https://www.rattamaratonid.ee/		Bosch
+253	2019-08-06	16. Kullamaa Rattamaraton	Kullamaa		C	MTB	2025-04-23 05:03:00.050448	https://estoniancup.ee		Estonian Cup
+108	2019-08-24	22. Tallinna Rattamaraton	Tallinn		C	MTB	2025-01-31 19:25:19.276188	https://www.rattamaratonid.ee/		Bosch
+180	2019-08-25	Filter Temposari Finaal	Ikla	24.94	C	TT	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+254	2019-09-07	20. Jõulumäe Rattamaraton	Jõulumäe		C	MTB	2025-04-23 05:03:00.050448	https://estoniancup.ee		Estonian Cup
+31	2019-09-15	22. Tartu Rattamaraton	Otepää	89	B	MTB	2025-01-29 12:53:02.712682	https://tartumaraton.ee/		
+255	2019-09-28	9. Karujärve Rattamaraton	Karujärve		C	MTB	2025-04-23 05:03:00.050448	https://estoniancup.ee		Estonian Cup
+126	2019-12-31	Bosch MTB Marathon Series GC 2019	Estonia		B	GC	2025-02-03 15:01:15.826176	https://www.rattamaratonid.ee/		Bosch
+237	2019-12-31	Estonian Cup Marathon Series GC 2019	Estonia		B	GC	2025-04-22 16:59:51.512181	https://estoniancup.ee		Estonian Cup
+256	2020-05-10	6. Valgehobusemäe Rattamaraton	Valgehobusemäe		C	MTB	2025-04-23 05:24:42.496613	https://estoniancup.ee		Estonian Cup
+181	2020-05-31	Filter Temposari I etapp	Kose-Risti	20	C	TT	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+182	2020-06-07	Filter Temposari II etapp	Aruküla	19.7	C	TT	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+183	2020-06-14	Filter Temposari III etapp	Kiili	25.12	C	TT	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+184	2020-06-21	Filter Temposari IV etapp	Jüri	14.98	C	TT	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+257	2020-06-27	18. Raplamaa Rattamaraton	Raplamaa		C	MTB	2025-04-23 05:24:42.496613	https://estoniancup.ee		Estonian Cup
+185	2020-06-28	Filter Temposari V etapp	Viimsi	13.92	C	TT	2025-02-05 21:50:28.195088	https://www.aerobike.ee		Filter Temposari
+258	2020-06-28	12. Kalevipoja Rattamaraton	Kuremaa		C	MTB	2025-04-23 05:24:42.496613	https://estoniancup.ee		Estonian Cup
+109	2020-07-05	18. Rakvere Rattamaraton	Rakvere		C	MTB	2025-01-31 19:25:19.276188	https://www.rattamaratonid.ee/		Bosch
+259	2020-07-18	17. Kullamaa Rattamaraton	Kullamaa		C	MTB	2025-04-23 05:24:42.496613	https://estoniancup.ee		Estonian Cup
+110	2020-07-26	Škoda Laagri 20. Rakke Rattamaraton	Rakke		C	MTB	2025-01-31 19:25:19.276188	https://www.rattamaratonid.ee/		Bosch
+141	2020-07-26	Škoda Laagri 20. Rakke Rattamaraton - XXL-sõit	Rakke		B	MTB	2025-02-05 12:30:44.011796	https://www.rattamaratonid.ee/		Bosch
+111	2020-08-02	20. Mulgi Rattamaraton	Mulgi		C	MTB	2025-01-31 19:25:19.276188	https://www.rattamaratonid.ee/		Bosch
+260	2020-08-08	20. Elva Rattamaraton	Elva		C	MTB	2025-04-23 05:24:42.496613	https://estoniancup.ee		Estonian Cup
+142	2020-08-23	22. Rõuge Rattamaraton - XXL-sõit	Rõuge		C	MTB	2025-02-05 12:30:44.011796	https://www.rattamaratonid.ee/		Bosch
+112	2020-08-23	22. Rõuge Rattamaraton	Rõuge		C	MTB	2025-01-31 19:25:19.276188	https://www.rattamaratonid.ee/		Bosch
+261	2020-08-29	21. Jõulumäe Rattamaraton	Jõulumäe		C	MTB	2025-04-23 05:24:42.496613	https://estoniancup.ee		Estonian Cup
+113	2020-09-05	23. Tallinna Rattamaraton	Tallinn		C	MTB	2025-01-31 19:25:19.276188	https://www.rattamaratonid.ee/		Bosch
+114	2020-09-12	6. Alutaguse Rattamaraton	Alutaguse		C	MTB	2025-01-31 19:25:19.276188	https://www.rattamaratonid.ee/		Bosch
+32	2020-09-20	23. Tartu Rattamaraton	Otepää	89	B	MTB	2025-01-29 12:53:02.712682	https://tartumaraton.ee/		
+127	2020-12-31	Bosch MTB Marathon Series GC 2020	Estonia		B	GC	2025-02-03 15:01:15.826176	https://www.rattamaratonid.ee/		Bosch
+238	2020-12-31	Estonian Cup Marathon Series GC 2020	Estonia		B	GC	2025-04-22 16:59:51.512181	https://estoniancup.ee		Estonian Cup
+262	2021-04-01	Lezyne 1. Tallinna Virtuaalarvestusega Rattamaraton	Tallinn		C	MTB	2025-04-23 05:50:21.85108	https://estoniancup.ee		Estonian Cup
+186	2021-05-05	Filter Temposari I etapp	Maardu	13.8	C	TT	2025-02-05 21:59:16.848297	https://www.aerobike.ee		Filter Temposari
+263	2021-05-08	Ramudden 7. Valgehobusemäe Rattamaraton	Valgehobusemäe		C	MTB	2025-04-23 05:50:21.85108	https://estoniancup.ee		Estonian Cup
+187	2021-05-12	Filter Temposari II etapp	Kumna	14.94	C	TT	2025-02-05 21:59:16.848297	https://www.aerobike.ee		Filter Temposari
+188	2021-05-19	Filter Temposari III etapp	Aruküla	19.7	C	TT	2025-02-05 21:59:16.848297	https://www.aerobike.ee		Filter Temposari
+189	2021-05-26	Filter Temposari IV etapp	Kiili	25.12	C	TTP	2025-02-05 21:59:16.848297	https://www.aerobike.ee		Filter Temposari
+190	2021-06-02	Filter Temposari V etapp	Viimsi	13.92	C	TT	2025-02-05 21:59:16.848297	https://www.aerobike.ee		Filter Temposari
+191	2021-06-09	Filter Temposari VI etapp	Ääsmäe	24.91	C	TTP	2025-02-05 21:59:16.848297	https://www.aerobike.ee		Filter Temposari
+264	2021-06-12	4. Kõlleste Rattamaraton	Kõlleste		C	MTB	2025-04-23 05:50:21.85108	https://estoniancup.ee		Estonian Cup
+115	2021-06-13	7. Alutaguse Rattamaraton	Alutaguse		C	MTB	2025-01-31 19:25:19.276188	https://www.rattamaratonid.ee/		Bosch
+265	2021-07-03	Frank Kutter 19. Raplamaa Rattamaraton	Raplamaa		C	MTB	2025-04-23 05:50:21.85108	https://estoniancup.ee		Estonian Cup
+146	2021-07-11	19. Rakvere Rattamaraton - XXL-sõit	Rakvere		C	MTB	2025-02-05 13:13:56.418474	https://www.rattamaratonid.ee/		Bosch
+116	2021-07-11	19. Rakvere Rattamaraton	Rakvere		C	MTB	2025-01-31 19:25:19.276188	https://www.rattamaratonid.ee/		Bosch
+117	2021-07-17	21. Mulgi Rattamaraton	Mulgi		C	MTB	2025-01-31 19:25:19.276188	https://www.rattamaratonid.ee/		Bosch
+144	2021-07-24	23. Rõuge Rattamaraton - XXL-sõit	Rõuge		B	MTB	2025-02-05 13:09:42.628284	https://www.rattamaratonid.ee/		Bosch
+118	2021-07-24	23. Rõuge Rattamaraton	Rõuge		C	MTB	2025-01-31 19:25:19.276188	https://www.rattamaratonid.ee/		Bosch
+266	2021-07-31	Rand&Tuulberg 21. Elva Rattamaraton	Elva		C	MTB	2025-04-23 05:50:21.85108	https://estoniancup.ee		Estonian Cup
+119	2021-08-08	Škoda Laagri 21. Rakke Rattamaraton	Rakke		C	MTB	2025-01-31 19:25:19.276188	https://www.rattamaratonid.ee/		Bosch
+267	2021-08-14	E-Piim 18. Kullamaa Rattamaraton	Kullamaa		C	MTB	2025-04-23 05:50:21.85108	https://estoniancup.ee		Estonian Cup
+120	2021-08-21	Kose 7 Järve Rattamaraton	Kose		C	MTB	2025-01-31 19:25:19.276188	https://www.rattamaratonid.ee/		Bosch
+268	2021-08-28	22. Jõulumäe Rattamaraton	Jõulumäe		C	MTB	2025-04-23 05:50:21.85108	https://estoniancup.ee		Estonian Cup
+121	2021-09-04	24. Tallinna Rattamaraton	Tallinn		C	MTB	2025-01-31 19:25:19.276188	https://www.rattamaratonid.ee/		Bosch
+33	2021-09-19	24. Tartu Rattamaraton	Otepää	89	B	MTB	2025-01-29 12:53:02.712682	https://tartumaraton.ee/		
+128	2021-12-31	Bosch MTB Marathon Series GC 2021	Estonia		B	GC	2025-02-03 15:01:15.826176	https://www.rattamaratonid.ee/		Bosch
+239	2021-12-31	Estonian Cup Marathon Series GC 2021	Estonia		B	GC	2025-04-22 16:59:51.512181	https://estoniancup.ee		Estonian Cup
+192	2022-04-20	Filter Temposari I etapp	Padise	20.35	C	TT	2025-04-17 04:14:19.429611	https://www.aerobike.ee		Filter Temposari
+269	2022-04-20	Lezyne 2. Tallinna Virtuaalarvestusega Rattamaraton	Tallinn		C	MTB	2025-04-23 06:02:34.536471	https://estoniancup.ee		Estonian Cup
+209	2022-04-27	Transtar Temposari I etapp	Tõravere	21	C	TT	2025-04-17 09:20:27.134366			Transtar Temposari
+193	2022-05-04	Filter Temposari II etapp	Kiili	25.12	C	TTP	2025-04-17 04:14:19.429611	https://www.aerobike.ee		Filter Temposari
+37	2022-05-07	22. Mulgi Rattamaraton	Viljandi	75	C	MTB	2025-01-30 09:59:37.341977	https://www.rattamaratonid.ee/		BOSCH
+210	2022-05-11	Transtar Temposari II etapp	Rahinge	24	C	TT	2025-04-17 09:20:27.134366			Transtar Temposari
+270	2022-05-14	5. Kõlleste Rattamaraton	Kõlleste	65	C	MTB	2025-04-23 06:02:34.536471	https://estoniancup.ee		Estonian Cup
+194	2022-05-18	Filter Temposari III etapp	Aruküla	19.7	C	TT	2025-04-17 04:14:19.429611	https://www.aerobike.ee		Filter Temposari
+38	2022-05-21	24. Rõuge Rattamaraton	Rõuge	47	C	MTB	2025-01-30 09:59:37.341977	https://www.rattamaratonid.ee/		BOSCH
+5	2022-05-29	41. Tartu Rattaralli	Tartu	128	B	Road Race	2025-01-28 10:57:37.29409	https://tartumaraton.ee/		
+195	2022-06-01	Filter Temposari IV etapp	Ääsmäe	24.91	C	TTP	2025-04-17 04:14:19.429611	https://www.aerobike.ee		Filter Temposari
+271	2022-06-04	HEPA 20. Raplamaa Rattamaraton	Raplamaa	70	C	MTB	2025-04-23 06:02:34.536471	https://estoniancup.ee		Estonian Cup
+211	2022-06-08	Transtar Temposari III etapp	Kavastu	40.2	C	TT	2025-04-17 09:20:27.134366			Transtar Temposari
+39	2022-06-11	8. Alutaguse Rattamaraton	Alutaguse	73	C	MTB	2025-01-30 09:59:37.341977	https://www.rattamaratonid.ee/		BOSCH
+196	2022-06-15	Filter Temposari V etapp	Maardu	13.8	C	TT	2025-04-17 04:14:19.429611	https://www.aerobike.ee		Filter Temposari
+58	2022-06-22	Eesti Meistrivõistlused 2022 - Mehed - Kuremaa	Kuremaa, Estonia	34.8	A	TT	2025-01-31 13:15:38.700736	https://www.ejl.ee/		Estonian Championships
+59	2022-06-22	Eesti Meistrivõistlused 2022 - Naised - Kuremaa	Kuremaa, Estonia	34.8	A	TT	2025-01-31 13:15:38.700736	https://www.ejl.ee/		Estonian Championships
+66	2022-06-26	Eesti Meistrivõistlused 2022 - Mehed	Kuldīga, Latvia	164	A	Road Race	2025-01-31 14:03:25.106319	https://www.ejl.ee/		Estonian Championships
+69	2022-06-26	Eesti Meistrivõistlused 2022 - Naised	Kuldīga, Latvia	95	A	Road Race	2025-01-31 14:03:25.107939	https://www.ejl.ee/		Estonian Championships
+40	2022-07-10	20. Rakvere Rattamaraton	Rakvere	49	C	MTB	2025-01-30 09:59:37.341977	https://www.rattamaratonid.ee/		BOSCH
+272	2022-07-30	Rand&Tuulberg 22. Elva Rattamaraton	Elva	62	C	MTB	2025-04-23 06:02:34.536471	https://estoniancup.ee		Estonian Cup
+41	2022-07-31	22. Rakke Rattamaraton	Rakke	48	C	MTB	2025-01-30 09:59:37.341977	https://www.rattamaratonid.ee/		BOSCH
+212	2022-08-03	Transtar Temposari IV etapp	Vorbuse	23.2	C	TT	2025-04-17 09:20:27.134366			Transtar Temposari
+273	2022-08-06	E-Piim 19. Kullamaa Rattamaraton	Kullamaa	70	C	MTB	2025-04-23 06:02:34.536471	https://estoniancup.ee		Estonian Cup
+197	2022-08-13	Filter Temposari VI etapp	Viimsi	13.92	C	TT	2025-04-17 04:14:19.429611	https://www.aerobike.ee		Filter Temposari
+213	2022-08-17	Transtar Temposari V etapp	Tõravere	21	C	TT	2025-04-17 09:20:27.134366			Transtar Temposari
+274	2022-08-20	23. Jõulumäe Rattamaraton	Jõulumäe	60	C	MTB	2025-04-23 06:02:34.536471	https://estoniancup.ee		Estonian Cup
+42	2022-08-20	Kose 7 Järve Rattamaraton 2022	Kose	48	C	MTB	2025-01-30 09:59:37.341977	https://www.rattamaratonid.ee/		BOSCH
+43	2022-09-03	25. Tallinna Rattamaraton	Aegviidu	47	C	MTB	2025-01-30 09:59:37.341977	https://www.rattamaratonid.ee/		BOSCH
+275	2022-09-10	Ramudden 8. Valgehobusemäe Rattamaraton	Valgehobusemäe	60.6	C	MTB	2025-04-23 06:02:34.536471	https://estoniancup.ee		Estonian Cup
+34	2022-09-18	25. Tartu Rattamaraton	Otepää	89	B	MTB	2025-01-29 12:53:02.712682	https://tartumaraton.ee/		
+276	2022-12-31	Estonian Cup Marathon Series GC 2022	Estonia		B	GC	2025-04-23 06:08:27.809818	https://estoniancup.ee		Estonian Cup
+129	2022-12-31	Bosch MTB Marathon Series GC 2022	Estonia		B	GC	2025-02-03 15:01:15.826176	https://www.rattamaratonid.ee/		Bosch
+214	2023-04-19	Transtar Temposari I etapp	Tõravere	21	C	TT	2025-04-17 09:20:27.134366			Transtar Temposari
+198	2023-04-26	Filter Temposari I etapp	Saku	12.2	C	TT	2025-04-17 05:26:23.975059			Filter Temposari
+215	2023-05-03	Transtar Temposari II etapp	Rahinge	24	C	TT	2025-04-17 09:20:27.134366			Transtar Temposari
+44	2023-05-07	23. Mulgi Rattamaraton	Viljandi	53	C	MTB	2025-01-30 09:59:37.341977	https://www.rattamaratonid.ee/		BOSCH
+199	2023-05-10	Filter Temposari II etapp	Kiili	25.12	C	TTP	2025-04-17 05:26:23.975059			Filter Temposari
+279	2023-05-13	6. Kõlleste Rattamaraton	Kõlleste	70	C	MTB	2025-04-24 05:26:31.59869	https://estoniancup.ee	t	Estonian Cup
+45	2023-05-20	25. Rõuge Rattamaraton	Rõuge	47	C	MTB	2025-01-30 09:59:37.341977	https://www.rattamaratonid.ee/		BOSCH
+200	2023-05-24	Filter Temposari III etapp	Viimsi	13.92	C	TT	2025-04-17 05:26:23.975059			Filter Temposari
+1	2023-05-28	42. Tartu Rattaralli	Tartu	128	B	Road Race	2025-01-27 17:36:17.832495	https://tartumaraton.ee/et/tulemused?sf=&sd=ASC&version=20230824_103235_13&lang_id=1&results_competition_id=1870&action=&year=2023&competition_id=1771&distance_id=453&name=&team=&gender_id=gender_id&country_id=country_id&class_id=#rows		
+216	2023-05-31	Transtar Temposari III etapp	Kavastu	40.2	C	TT	2025-04-17 09:20:27.134366			Transtar Temposari
+46	2023-06-03	9. Alutaguse Rattamaraton	Alutaguse	48	C	MTB	2025-01-30 09:59:37.341977	https://www.rattamaratonid.ee/		BOSCH
+201	2023-06-07	Filter Temposari IV etapp	Ääsmäe	30.2	C	TTT	2025-04-17 05:26:23.975059			Filter Temposari
+280	2023-06-10	Hepa 21. Raplamaa Rattamaraton	Raplamaa	64	C	MTB	2025-04-24 05:26:31.59869	https://estoniancup.ee	t	Estonian Cup
+202	2023-06-14	Filter Temposari V etapp	Padise	20.35	C	TT	2025-04-17 05:26:23.975059			Filter Temposari
+60	2023-06-20	Eesti Meistrivõistlused 2023 - Mehed - Viljandi	Viljandi, Estonia	36.5	A	TT	2025-01-31 13:15:38.705455	https://www.ejl.ee/		Estonian Championships
+61	2023-06-20	Eesti Meistrivõistlused 2023 - Naised - Viljandi	Viljandi, Estonia	18.5	A	TT	2025-01-31 13:15:38.705455	https://www.ejl.ee/		Estonian Championships
+68	2023-06-25	Eesti Meistrivõistlused 2023 - Naised	Alytus, Lithuania	106.4	A	Road Race	2025-01-31 14:03:25.107628	https://www.ejl.ee/		Estonian Championships
+65	2023-06-25	Eesti Meistrivõistlused 2023 - Mehed	Alytus, Lithuania	162.8	A	Road Race	2025-01-31 14:03:25.105928	https://www.ejl.ee/		Estonian Championships
+47	2023-07-09	21. Rakvere Rattamaraton - Eesti MV	Rakvere	66	B	MTB	2025-01-30 09:59:37.341977	https://www.rattamaratonid.ee/		BOSCH
+281	2023-07-29	Rand&Tuulberg 23. Elva Rattamaraton	Elva	70	C	MTB	2025-04-24 05:26:31.59869	https://estoniancup.ee	t	Estonian Cup
+48	2023-07-30	23. Rakke Rattamaraton	Rakke	48	C	MTB	2025-01-30 09:59:37.341977	https://www.rattamaratonid.ee/		BOSCH
+217	2023-08-02	Transtar Temposari IV etapp	Vorbuse	23.2	C	TT	2025-04-17 09:20:27.134366			Transtar Temposari
+282	2023-08-12	Solar Wheel 1. Valga/Valka Rattamaraton	Valga	127	C	MTB	2025-04-24 05:26:31.59869	https://estoniancup.ee	t	Estonian Cup
+218	2023-08-16	Transtar Temposari V etapp	Tõravere	21	C	TT	2025-04-17 09:20:27.134366			Transtar Temposari
+49	2023-08-19	Kose 7 Järve Rattamaraton 2023	Kose	66	C	MTB	2025-01-30 09:59:37.341977	https://www.rattamaratonid.ee/		BOSCH
+283	2023-08-26	Segafredo 24. Jõulumäe Rattamaraton	Jõulumäe	60	C	MTB	2025-04-24 05:26:31.59869	https://estoniancup.ee	t	Estonian Cup
+50	2023-09-02	26. Tallinna Rattamaraton	Aegviidu	47	C	MTB	2025-01-30 09:59:37.341977	https://www.rattamaratonid.ee/		BOSCH
+284	2023-09-09	Ramudden 9. Valgehobusemäe Rattamaraton	Valgehobusemäe	60.6	C	MTB	2025-04-24 05:26:31.59869	https://estoniancup.ee	t	Estonian Cup
+35	2023-09-17	26. Tartu Rattamaraton	Otepää	86	B	MTB	2025-01-29 12:53:02.712682	https://tartumaraton.ee/		
+130	2023-12-31	Bosch MTB Marathon Series GC 2023	Estonia		B	GC	2025-02-03 15:01:15.826176	https://www.rattamaratonid.ee/		Bosch
+277	2023-12-31	Estonian Cup Marathon Series GC 2023	Estonia		B	GC	2025-04-23 06:08:27.809818	https://estoniancup.ee		Estonian Cup
+219	2024-04-17	Transtar Temposari I etapp	Tõravere	21	C	TT	2025-04-17 09:20:27.134366			Transtar Temposari
+220	2024-04-24	Transtar Temposari II etapp	Luke	18.3	C	TT	2025-04-17 09:20:27.134366			Transtar Temposari
+285	2024-05-04	VELOPLUS 22. Raplamaa Rattamaraton	Raplamaa	65	C	MTB	2025-04-24 05:26:31.610171	https://estoniancup.ee	t	Estonian Cup
+51	2024-05-05	24. Mulgi Rattamaraton	Viljandi	69	C	MTB	2025-01-30 09:59:37.341977	https://www.rattamaratonid.ee/		BOSCH
+203	2024-05-08	Filter Temposari I etapp	Saku	11.72	C	TT	2025-04-17 08:01:09.683194			Filter Temposari
+52	2024-05-19	26. Rõuge Rattamaraton	Rõuge	48	C	MTB	2025-01-30 09:59:37.341977	https://www.rattamaratonid.ee/		BOSCH
+204	2024-05-22	Filter Temposari II etapp	Kiili	25.12	C	TTP	2025-04-17 08:01:09.683194			Filter Temposari
+3	2024-05-26	43. Tartu Rattaralli	Tartu	126	B	Road Race	2025-01-27 18:37:16.935514	https://tartumaraton.ee/		
+221	2024-05-29	Transtar Temposari III etapp	Kavastu	40.2	C	TT	2025-04-17 09:20:27.134366			Transtar Temposari
+53	2024-06-01	10. Alutaguse Rattamaraton	Alutaguse	47	C	MTB	2025-01-30 09:59:37.341977	https://www.rattamaratonid.ee/		BOSCH
+205	2024-06-05	Filter Temposari III etapp	Kose	20.16	C	TT	2025-04-17 08:01:09.683194			Filter Temposari
+286	2024-06-08	Solar Wheel 2. Valga/Valka Rattamaraton	Valga	130	C	MTB	2025-04-24 05:26:31.610171	https://estoniancup.ee	t	Estonian Cup
+206	2024-06-12	Filter Temposari IV etapp	Viimsi	13.92	C	TT	2025-04-17 08:01:09.683194			Filter Temposari
+63	2024-06-18	Eesti Meistrivõistlused 2024 - Naised - Varbuse	Varbuse, Estonia	19.4	A	TT	2025-01-31 13:15:38.705794	https://www.ejl.ee/		Estonian Championships
+62	2024-06-18	Eesti Meistrivõistlused 2024 - Mehed - Varbuse	Varbuse, Estonia	29.8	A	TT	2025-01-31 13:15:38.705794	https://www.ejl.ee/		Estonian Championships
+67	2024-06-21	Eesti Meistrivõistlused 2024 - Naised	Võru, Estonia	113	A	Road Race	2025-01-31 14:03:25.107321	https://www.ejl.ee/		Estonian Championships
+64	2024-06-22	Eesti Meistrivõistlused 2024 - Mehed	Võru, Estonia	158.2	A	Road Race	2025-01-31 14:03:25.105121	https://www.ejl.ee/		Estonian Championships
+287	2024-06-23	Smiltene Rattamaraton	Smiltene	100.7	C	MTB	2025-04-24 05:26:31.610171	https://estoniancup.ee	t	Estonian Cup
+54	2024-07-07	22. Rakvere Rattamaraton	Rakvere	50	C	MTB	2025-01-30 09:59:37.341977	https://www.rattamaratonid.ee/		BOSCH
+288	2024-07-27	Rand&Tuulberg 24. Elva Rattamaraton	Elva	70	C	MTB	2025-04-24 05:26:31.610171	https://estoniancup.ee	t	Estonian Cup
+222	2024-07-31	Transtar Temposari IV etapp	Vorbuse	23.2	C	TT	2025-04-17 09:20:27.134366			Transtar Temposari
+55	2024-08-04	24. Rakke Rattamaraton	Rakke	48	C	MTB	2025-01-30 09:59:37.341977	https://www.rattamaratonid.ee/		BOSCH
+207	2024-08-07	Filter Temposari V etapp	Ääsmäe	30.2	C	TTT	2025-04-17 08:01:09.683194			Filter Temposari
+289	2024-08-11	Segafredo 25. Jõulumäe Rattamaraton	Jõulumäe	60	C	MTB	2025-04-24 05:26:31.610171	https://estoniancup.ee	t	Estonian Cup
+208	2024-08-14	Filter Temposari VI etapp	Paldiski	13.32	C	TT	2025-04-17 08:01:09.683194			Filter Temposari
+56	2024-08-17	Kose 7 Järve Rattamaraton 2024 - EESTI MV	Kose	66	B	MTB	2025-01-30 09:59:37.341977	https://www.rattamaratonid.ee/		BOSCH
+223	2024-08-21	Transtar Temposari V etapp	Tõravere	16.5	C	TT	2025-04-17 09:20:27.134366			Transtar Temposari
+57	2024-08-31	27. Tallinna Rattamaraton	Aegviidu	47	C	MTB	2025-01-30 09:59:37.341977	https://www.rattamaratonid.ee/		BOSCH
+290	2024-09-07	Ramudden 10. Valgehobusemäe Rattamaraton	Valgehobusemäe	60.6	C	MTB	2025-04-24 05:26:31.610171	https://estoniancup.ee	t	Estonian Cup
+36	2024-09-15	27. Tartu Rattamaraton	Otepää	86	B	MTB	2025-01-29 12:53:02.712682	https://tartumaraton.ee/		
+131	2024-12-31	Bosch MTB Marathon Series GC 2024	Estonia		B	GC	2025-02-03 15:01:15.826176	https://www.rattamaratonid.ee/		Bosch
+278	2024-12-31	Estonian Cup Marathon Series GC 2024	Estonia		B	GC	2025-04-23 06:08:27.809818	https://estoniancup.ee		Estonian Cup
+224	2025-04-16	Transtar Temposari I etapp	Tõravere	21	C	TT	2025-04-17 09:51:45.581089			Transtar Temposari

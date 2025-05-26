@@ -22,6 +22,7 @@ func main() {
 	defer dbConn.Close()
 
 	r:= chi.NewRouter()
+
 	r.Use(middleware.Logger)
 	r.Use(middleware.Recoverer)
 
@@ -29,6 +30,7 @@ func main() {
 
 	r.Get("/api/stats", h.GetSummary)
 	r.Get("/api/homepagestats", h.GetHomepageRaceStats)
+	r.Get("/api/riderprofile", h.GetRiderProfile)
 
 	log.Println("Server started on: 1337")
 	http.ListenAndServe(":1337", r)
