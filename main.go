@@ -31,6 +31,7 @@ func main() {
 	r.Get("/api/stats", h.GetSummary)
 	r.Get("/api/homepagestats", h.GetHomepageRaceStats)
 	r.Get("/api/riderprofile", h.GetRiderProfile)
+	r.Get("/api/raceprofile", h.GetRaceProfile)
 
 	log.Println("Server started on: 1337")
 	http.ListenAndServe(":1337", r)

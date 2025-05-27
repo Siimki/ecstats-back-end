@@ -237,9 +237,11 @@ func fetchRiderResults(db *sql.DB, riderID int) ([]models.RiderResult, error) {
 	query := `
 	SELECT 
 		EXTRACT(YEAR FROM races.date) AS season,
+		race_id,
 		TO_CHAR(races.date, 'YYYY-MM-DD') AS date,
 		races.name AS race,
 		races.category,
+		races.race_type,
 		results.position,
 		COALESCE(results.points, 0) AS points
 	FROM results
@@ -247,7 +249,7 @@ func fetchRiderResults(db *sql.DB, riderID int) ([]models.RiderResult, error) {
 	WHERE results.rider_id = $1
 	ORDER BY races.date DESC;
 	`
-
+	
 	rows, err := db.Query(query, riderID)
 	if err != nil {
 		return nil, err
@@ -256,7 +258,7 @@ func fetchRiderResults(db *sql.DB, riderID int) ([]models.RiderResult, error) {
 
 	for rows.Next() {
 		var r models.RiderResult
-		err := rows.Scan(&r.Season, &r.Date, &r.Race, &r.Category, &r.Position, &r.Points)
+		err := rows.Scan(&r.Season, &r.RaceId, &r.Date, &r.Race, &r.Category, &r.Type, &r.Position, &r.Points)
 		if err != nil {
 			log.Printf("[FetchRiderResults]Error executing query %q with riderID=%d: %v", query, riderID, err)
 			return nil, err

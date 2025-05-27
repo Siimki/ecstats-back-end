@@ -42,11 +42,13 @@ type RiderSeasonStats struct {
 // RiderResult is one row in result table
 type RiderResult struct {
 	Season   int    `json:"season"`
+	RaceId	 int	`json:"raceId"`
 	Date     string `json:"date"`
 	Race     string `json:"race"`
 	Category string `json:"category"`
 	Position int    `json:"position"`
 	Points   int    `json:"points"`
+	Type	 string `json:"type"`
 }
 
 // RiderTopResult is simplified for top 3 highlight

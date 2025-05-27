@@ -62,6 +62,25 @@ func (h *Handler) GetRiderProfile(w http.ResponseWriter, r *http.Request) {
 
 	json.NewEncoder(w).Encode(fullRiderProfile)
 }
+
+func (h *Handler) GetRaceProfile(w http.ResponseWriter, r *http.Request) {
+	raceIdStr := r.URL.Query().Get("raceId")
+
+	raceId, err := strconv.Atoi(raceIdStr)
+	if err != nil {
+		http.Error(w, "Invalid riderId", http.StatusBadRequest)
+		return
+	}
+
+	homepageStats, err := db.GetRaceProfile(h.DB, raceId)
+	if err != nil {
+		fmt.Println(err)
+		http.Error(w, "Error fetching homepage stats", http.StatusInternalServerError)
+		return
+	}
+	json.NewEncoder(w).Encode(homepageStats)
+}
+
 func NewHandler(db *sql.DB) *Handler {
 	return &Handler{
 		DB: db,
