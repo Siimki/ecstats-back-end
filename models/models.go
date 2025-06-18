@@ -78,3 +78,17 @@ type HomePageRankingRider struct {
 	ProfilePhotoURL string `json:"profile_photo_url"`
 	Points float64    `json:"points"`
 }
+
+type RiderRaceResult struct {
+	RaceName string `json:"raceName"`
+	Position string `json:"position"`
+}
+
+type RidersTop100 struct {
+	RiderID    int                `json:"riderId"`
+	FirstName  string             `json:"firstName"`
+	LastName   string             `json:"lastName"`
+	Team       string             `json:"team"`
+	Points     float64            `json:"points"`
+	LastRaces  []RiderRaceResult  `json:"lastRaces"`
+}

@@ -10,14 +10,12 @@ import (
 func GetRaceProfile(db *sql.DB, raceID int) (models.FullRaceProfile, error) {
     var profile models.FullRaceProfile
 
-    // Fetch race details (including weather/participants)
     race, err := fetchRaceDetails(db, raceID)
     if err != nil {
         return profile, err
     }
     profile.Race = race
 
-    // Fetch race results (all finishers, teams, times, etc)
     results, err := fetchRaceResults(db, raceID)
     if err != nil {
         return profile, err
@@ -29,7 +27,6 @@ func GetRaceProfile(db *sql.DB, raceID int) (models.FullRaceProfile, error) {
 
 func fetchRaceDetails(db *sql.DB, raceID int) (models.RaceDetails, error) {
     var r models.RaceDetails
-    // Update query as your schema grows
 	query := `
     SELECT
         races.id,
@@ -110,3 +107,4 @@ func fetchRaceResults(db *sql.DB, raceID int) ([]models.RaceResultRow, error) {
 
     return results, nil
 }
+

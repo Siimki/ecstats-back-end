@@ -81,6 +81,34 @@ func (h *Handler) GetRaceProfile(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(homepageStats)
 }
 
+func (h *Handler) GetTop100Riders(w http.ResponseWriter, r *http.Request) {
+	homepageStats, err := db.FetchTop100Riders(h.DB)
+	if err != nil {
+		fmt.Println(err)
+		http.Error(w, "Error fetching homepage stats", http.StatusInternalServerError)
+		return
+	}
+	json.NewEncoder(w).Encode(homepageStats)
+}
+
+func (h *Handler) SearchRiders(w http.ResponseWriter, r *http.Request) {
+	query := r.URL.Query().Get("q")
+	if query == "" {
+		http.Error(w, "Missing search query", http.StatusBadRequest)
+		return
+	}
+
+	riders, err := db.SearchRidersByNameOrTeam(h.DB, query)
+	if err != nil {
+		fmt.Println(err)
+		http.Error(w, "Error searching riders", http.StatusInternalServerError)
+		return
+	}
+
+	json.NewEncoder(w).Encode(riders)
+}
+
+
 func NewHandler(db *sql.DB) *Handler {
 	return &Handler{
 		DB: db,

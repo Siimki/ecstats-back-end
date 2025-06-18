@@ -5,7 +5,6 @@ import (
 	"ecstats-back-end/models"
 	"ecstats-back-end/utils"
 	"log"
-	"fmt"
 	_ "github.com/lib/pq"
 )
 
@@ -35,7 +34,8 @@ func GetRiderProfile(db *sql.DB, riderID int, year int) (models.FullRiderProfile
 	topResultsCh, errCh6 := utils.RunAsync(func() ([]models.RiderTopResult, error) {
 		return fetchRiderTopResults(db, riderID)
 	})
-
+	//Prepare ranking tables in DB before continueing with riderrankigns
+	
 	// rankingCh, errCh7 := utils.RunAsync(func() (models.RiderRanking, error) {
 	// 	return fetchRiderRanking(db, riderID, year)
 	// })
@@ -69,19 +69,9 @@ func GetRiderProfile(db *sql.DB, riderID int, year int) (models.FullRiderProfile
 			profile.Results = rs
 		case tr := <-topResultsCh:
 			profile.TopResults = tr
-		// case r := <-rankingCh:
-		// 	fmt.Println(r.TotalPoints, "hei")
-		// 	fmt.Println(r.Place, "hei")
-		// 	profile.Profile.RankingPointsMTB = r.TotalPointsMTB
-		// 	profile.Profile.RankingPlaceMTB = r.PlaceMTB
-		// 	profile.Profile.RankingPointsMTB = r.TotalPointsRoad
-		// 	profile.Profile.RankingPlaceMTB = r.PlaceRoad
-		// 	fmt.Println(profile.Profile)
+
 		}
 	}
-	// fmt.Println(profile.Profile.RankingPoints, "Points")
-	fmt.Println(profile.Profile)
-	fmt.Println(profile)
 	return profile, nil
 }
 
