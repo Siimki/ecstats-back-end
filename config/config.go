@@ -4,6 +4,8 @@ import (
 	"fmt"
 	"os"
 	"gopkg.in/yaml.v3"
+	"log"
+	"strconv"
 )
 
 type Config struct {
@@ -57,4 +59,44 @@ func LoadConfig(filename string) (*Config, error) {
 	}
 
 	return &config, nil
+}
+
+func LoadConfigFromEnv() *Config {
+	get := func(key string, required bool) string {
+		val := os.Getenv(key)
+		if val == "" && required {
+			log.Fatalf("Missing required env variable: %s", key)
+		}
+		return val
+	}
+
+	getInt := func(key string, fallback int) int {
+		val := os.Getenv(key)
+		if val == "" {
+			return fallback
+		}
+		n, err := strconv.Atoi(val)
+		if err != nil {
+			log.Fatalf("Invalid integer for %s: %v", key, err)
+		}
+		return n
+	}
+
+	cfg := &Config{}
+
+	cfg.Database.Host = get("DB_HOST", true)
+	cfg.Database.Port = getInt("DB_PORT", 5432)
+	cfg.Database.User = get("DB_USER", true)
+	cfg.Database.Password = get("DB_PASSWORD", true)
+	cfg.Database.Name = get("DB_NAME", true)
+	cfg.Database.SSLMode = get("DB_SSLMODE", false)
+
+	cfg.App.LogLevel = get("APP_LOG_LEVEL", false)
+	cfg.App.Port = getInt("APP_PORT", 8080)
+	cfg.App.Environment = get("APP_ENV", false)
+
+	// Optional fields (or hardcode in your app)
+	cfg.RegexGroups.Regex = get("REGEX", false)
+
+	return cfg
 }
