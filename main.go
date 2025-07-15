@@ -14,10 +14,12 @@ import (
 
 func main() {
 
-	cfg, err := config.LoadConfig("config/config.yaml")
-	if err != nil {
-		log.Fatal("Failed to load config:", err)
-	}
+	// cfg, err := config.LoadConfig("config/config.yaml")
+	// if err != nil {
+	// 	log.Fatal("Failed to load config:", err)
+	// }
+	cfg := config.LoadConfigFromEnv()
+
 	dbConn := db.ConnectToDB(cfg)
 	defer dbConn.Close()
 
