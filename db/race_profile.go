@@ -79,7 +79,11 @@ func fetchRaceResults(db *sql.DB, raceID int) ([]models.RaceResultRow, error) {
     JOIN riders ON results.rider_id = riders.id
     LEFT JOIN teams ON results.team_id = teams.id
     WHERE results.race_id = $1
-    ORDER BY results.position ASC;
+    ORDER BY 
+    CASE 
+        WHEN results.position = 0 THEN 9999
+        ELSE results.position
+    END ASC;
     `
 
     rows, err := db.Query(query, raceID)
