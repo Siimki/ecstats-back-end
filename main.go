@@ -6,19 +6,29 @@ import (
 
 	"github.com/go-chi/chi/v5"
 	"github.com/go-chi/chi/v5/middleware"
-
+	//"github.com/joho/godotenv"
+	"ecstats-back-end/utils"
 	"ecstats-back-end/config"
 	"ecstats-back-end/db"
 	"ecstats-back-end/handlers"
 )
 
 func main() {
-
+	//use this for local 
 	// cfg, err := config.LoadConfig("config/config.yaml")
 	// if err != nil {
 	// 	log.Fatal("Failed to load config:", err)
 	// }
+
+	// Load .env file in local development
+	// if err := godotenv.Load(); err != nil {
+	// 	log.Println("No .env file found, using system environment variables")
+	// }
+
+	// use this for prod
 	cfg := config.LoadConfigFromEnv()
+
+	utils.InitHashID()
 
 	dbConn := db.ConnectToDB(cfg)
 	defer dbConn.Close()

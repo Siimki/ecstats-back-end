@@ -43,13 +43,13 @@ type HomePageData struct {
 }
 
 type HomePageRace struct {
-	RaceID      int    `json:"race_id"`
+	RaceID      string    `json:"race_id"`
 	RaceName    string `json:"race_name"`
-	FirstPlace       int    `json:"first_place"`
+	FirstPlaceId       string    `json:"first_place_id"`
 	FirstPlaceName   string `json:"first_place_name"`
-	SecondPlace      int    `json:"second_place"`
+	SecondPlaceId      string    `json:"second_place_id"`
 	SecondPlaceName  string `json:"second_place_name"`
-	ThirdPlace       int    `json:"third_place"`
+	ThirdPlaceId       string    `json:"third_place_id"`
 	ThirdPlaceName   string `json:"third_place_name"`
 	Date        string `json:"date"`
 }
@@ -63,7 +63,7 @@ type NewsArticle struct {
 
 
 type UpcomingRace struct {
-	RaceID      int    `json:"race_id"`
+	RaceID      string  `json:"race_id"`
 	RaceName    string `json:"race_name"`
 	Location    string `json:"location"`
 	Category    string `json:"category"`
@@ -72,7 +72,7 @@ type UpcomingRace struct {
 
 
 type HomePageRankingRider struct {
-	RiderID int    `json:"rider_id"`
+	RiderID string    `json:"rider_id"`
 	Name   string `json:"name"`
 	Team   string `json:"team"`
 	ProfilePhotoURL string `json:"profile_photo_url"`
@@ -85,7 +85,7 @@ type RiderRaceResult struct {
 }
 
 type RidersTop100 struct {
-	RiderID    int                `json:"riderId"`
+	RiderID    string             `json:"riderId"`
 	FirstName  string             `json:"firstName"`
 	LastName   string             `json:"lastName"`
 	Team       string             `json:"team"`

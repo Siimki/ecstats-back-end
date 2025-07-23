@@ -6,7 +6,7 @@ type FullRaceProfile struct {
 }
 
 type RaceDetails struct {
-    ID                int     `json:"id"`
+    ID                string     `json:"id"`
     Date              string  `json:"date"`
     Name              string  `json:"name"`
     Category          string  `json:"category"`
@@ -21,7 +21,7 @@ type RaceDetails struct {
 
 type RaceResultRow struct {
     Position    int    `json:"position"`
-    RiderID     int    `json:"riderId"`
+    RiderID     string    `json:"riderId"`
     RiderName   string `json:"riderName"`
     Team        string `json:"team"`
     Time        string `json:"time"`

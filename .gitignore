@@ -1,1 +1,4 @@
 /config/config.yaml
+update_db.sh
+ecstats_dump.sql
+.env

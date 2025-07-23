@@ -3,20 +3,27 @@ package db
 import (
     "database/sql"
     "ecstats-back-end/models"
+    "ecstats-back-end/utils"
     "log"
     _ "github.com/lib/pq"
 )
 
-func GetRaceProfile(db *sql.DB, raceID int) (models.FullRaceProfile, error) {
+func GetRaceProfile(db *sql.DB, raceID string) (models.FullRaceProfile, error) {
     var profile models.FullRaceProfile
 
-    race, err := fetchRaceDetails(db, raceID)
+    decodedID, err := utils.DecodeID(raceID)
+    if err != nil {
+        log.Printf("GetRaceProfile: failed to Decode riderID %x: %v", raceID, err)
+        return profile, err 
+    }
+
+    race, err := fetchRaceDetails(db, decodedID)
     if err != nil {
         return profile, err
     }
     profile.Race = race
 
-    results, err := fetchRaceResults(db, raceID)
+    results, err := fetchRaceResults(db, decodedID)
     if err != nil {
         return profile, err
     }
@@ -27,6 +34,7 @@ func GetRaceProfile(db *sql.DB, raceID int) (models.FullRaceProfile, error) {
 
 func fetchRaceDetails(db *sql.DB, raceID int) (models.RaceDetails, error) {
     var r models.RaceDetails
+    
 	query := `
     SELECT
         races.id,
@@ -48,7 +56,6 @@ func fetchRaceDetails(db *sql.DB, raceID int) (models.RaceDetails, error) {
 `
 
 
-
     err := db.QueryRow(query, raceID).Scan(
         &r.ID,
 		&r.Date,
@@ -61,6 +68,7 @@ func fetchRaceDetails(db *sql.DB, raceID int) (models.RaceDetails, error) {
         &r.Temperature,
         &r.TotalParticipants,
     )
+    
     return r, err
 }
 
@@ -94,9 +102,10 @@ func fetchRaceResults(db *sql.DB, raceID int) ([]models.RaceResultRow, error) {
 
     for rows.Next() {
         var r models.RaceResultRow
+        var riderID int
         err := rows.Scan(
             &r.Position,
-            &r.RiderID,
+            &riderID,
             &r.RiderName,
             &r.Team,
             &r.Time,
@@ -106,6 +115,11 @@ func fetchRaceResults(db *sql.DB, raceID int) ([]models.RaceResultRow, error) {
             log.Printf("[FetchRaceResults]Error executing query %q with raceID=%d: %v", query, raceID, err)
             return nil, err
         }
+        r.RiderID, err = utils.EncodeID(riderID)
+		if err != nil {
+			log.Printf("fetchLastRaces: failed to encode race ID %d: %v", raceID, err)
+			return nil, err
+		}
         results = append(results, r)
     }
 

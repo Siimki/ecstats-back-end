@@ -8,31 +8,38 @@ import (
 	_ "github.com/lib/pq"
 )
 
-func GetRiderProfile(db *sql.DB, riderID int, year int) (models.FullRiderProfile, error) {
+func GetRiderProfile(db *sql.DB, riderID string, year int) (models.FullRiderProfile, error) {
 	var profile models.FullRiderProfile
 
+	decodedID, err := utils.DecodeID(riderID)
+
+    if err != nil {
+        log.Printf("GetRaceProfile: failed to Decode riderID %x: %v", decodedID, err)
+        return profile, err 
+    }
+
 	profileCh, errCh1 := utils.RunAsync(func() (models.RiderProfile, error) {
-		return fetchRiderBaseInfo(db, riderID, year)
+		return fetchRiderBaseInfo(db, decodedID, year)
 	})
 
 	partnershipsCh, errCh2 := utils.RunAsync(func() (models.RiderPartnerships, error) {
-		return fetchRiderPartnerships(db, riderID)
+		return fetchRiderPartnerships(db, decodedID)
 	})
 
 	totalsCh, errCh3 := utils.RunAsync(func() (models.RiderTotals, error) {
-		return fetchRiderTotals(db, riderID)
+		return fetchRiderTotals(db, decodedID)
 	})
 
 	seasonStatsCh, errCh4 := utils.RunAsync(func() ([]models.RiderSeasonStats, error) {
-		return fetchRiderSeasonStats(db, riderID, year)
+		return fetchRiderSeasonStats(db, decodedID, year)
 	})
 
 	resultsCh, errCh5 := utils.RunAsync(func() ([]models.RiderResult, error) {
-		return fetchRiderResults(db, riderID)
+		return fetchRiderResults(db, decodedID)
 	})
 
 	topResultsCh, errCh6 := utils.RunAsync(func() ([]models.RiderTopResult, error) {
-		return fetchRiderTopResults(db, riderID)
+		return fetchRiderTopResults(db, decodedID)
 	})
 	//Prepare ranking tables in DB before continueing with riderrankigns
 	
@@ -101,13 +108,19 @@ func fetchRiderBaseInfo(db *sql.DB, riderID int, year int) (models.RiderProfile,
 	LIMIT 1;
 	`
 
-	var activeSinceRaw sql.NullTime
+
+	var (
+		activeSinceRaw sql.NullTime
+		birthplace     sql.NullString
+		targetRiderID  int
+	)
+
 
 	err := db.QueryRow(query, riderID, year).Scan(
-		&rp.ID,
+		&targetRiderID,
 		&rp.Name,
 		&rp.Team,
-		&rp.Birthplace,
+		&birthplace,
 		&activeSinceRaw,
 		&rp.RankingPointsRoad,
 		&rp.RankingPlaceRoad,
@@ -119,10 +132,22 @@ func fetchRiderBaseInfo(db *sql.DB, riderID int, year int) (models.RiderProfile,
 		return rp, err
 	}
 
+	// Handle nullable birthplace
+	if birthplace.Valid {
+		rp.Birthplace = birthplace.String
+	} else {
+		rp.Birthplace = "Unknown" // or empty string
+	}
+
 	if activeSinceRaw.Valid {
 		rp.ActiveSince = activeSinceRaw.Time.Year()
 	} else {
 		rp.ActiveSince = 0
+	}
+	rp.ID, err = utils.EncodeID(riderID)
+	if err != nil {
+		log.Printf("fetchRiderBaseInfo: failed to encode rider ID %d: %v", riderID, err)
+		return rp, err
 	}
 
 	return rp, nil
@@ -247,10 +272,16 @@ func fetchRiderResults(db *sql.DB, riderID int) ([]models.RiderResult, error) {
 	defer rows.Close()
 
 	for rows.Next() {
+		var raceID int
 		var r models.RiderResult
-		err := rows.Scan(&r.Season, &r.RaceId, &r.Date, &r.Race, &r.Category, &r.Type, &r.Position, &r.Points)
+		err := rows.Scan(&r.Season, &raceID, &r.Date, &r.Race, &r.Category, &r.Type, &r.Position, &r.Points)
 		if err != nil {
 			log.Printf("[FetchRiderResults]Error executing query %q with riderID=%d: %v", query, riderID, err)
+			return nil, err
+		}
+		r.RaceId, err = utils.EncodeID(raceID)
+		if err != nil {
+			log.Printf("fetchLastRaces: failed to encode race ID %d: %v", raceID, err)
 			return nil, err
 		}
 		results = append(results, r)

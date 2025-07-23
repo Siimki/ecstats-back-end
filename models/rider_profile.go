@@ -2,7 +2,7 @@ package models
 
 // RiderProfile holds personal and ranking info
 type RiderProfile struct {
-	ID            int    `json:"id"`
+	ID            string    `json:"id"`
 	Name          string `json:"name"`
 	Team          string `json:"team"`
 	Birthplace    string `json:"birthplace"`
@@ -42,7 +42,7 @@ type RiderSeasonStats struct {
 // RiderResult is one row in result table
 type RiderResult struct {
 	Season   int    `json:"season"`
-	RaceId	 int	`json:"raceId"`
+	RaceId	 string	`json:"raceId"`
 	Date     string `json:"date"`
 	Race     string `json:"race"`
 	Category string `json:"category"`

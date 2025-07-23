@@ -35,16 +35,11 @@ func (h *Handler) GetHomepageRaceStats(w http.ResponseWriter, r *http.Request) {
 }
 
 func (h *Handler) GetRiderProfile(w http.ResponseWriter, r *http.Request) {
-	riderIdStr := r.URL.Query().Get("riderId")
+	riderId := r.URL.Query().Get("riderId")
 	yearStr := r.URL.Query().Get("year")
 
-	riderId, err := strconv.Atoi(riderIdStr)
-	if err != nil {
-		http.Error(w, "Invalid riderId", http.StatusBadRequest)
-		return
-	}
-
 	var year int
+	var err error
 	if yearStr != "" {
 		year, err = strconv.Atoi(yearStr)
 		if err != nil {
@@ -64,13 +59,7 @@ func (h *Handler) GetRiderProfile(w http.ResponseWriter, r *http.Request) {
 }
 
 func (h *Handler) GetRaceProfile(w http.ResponseWriter, r *http.Request) {
-	raceIdStr := r.URL.Query().Get("raceId")
-
-	raceId, err := strconv.Atoi(raceIdStr)
-	if err != nil {
-		http.Error(w, "Invalid riderId", http.StatusBadRequest)
-		return
-	}
+	raceId := r.URL.Query().Get("raceId")
 
 	homepageStats, err := db.GetRaceProfile(h.DB, raceId)
 	if err != nil {

@@ -98,27 +98,63 @@ func fetchLastRaces(db *sql.DB) ([]models.HomePageRace, error) {
 	}
 	defer rows.Close()
 
-	var rawDate time.Time
 	var races []models.HomePageRace
+
 	for rows.Next() {
-		var race models.HomePageRace
+		var (
+				raceID         int
+				firstPlaceId	int
+				secondPlaceId	int
+				thirdPlaceId	int
+				rawDate        time.Time
+				race           models.HomePageRace
+			)
 		err := rows.Scan(
-			&race.RaceID,
+			&raceID,
 			&race.RaceName,
 			&rawDate,
-			&race.FirstPlace,
+			&firstPlaceId,
 			&race.FirstPlaceName,
-			&race.SecondPlace,
+			&secondPlaceId,
 			&race.SecondPlaceName,
-			&race.ThirdPlace,
+			&thirdPlaceId,
 			&race.ThirdPlaceName,
 		)
 		if err != nil {
+			log.Printf("fetchLastRaces: scan error: %v", err)
 			return nil, err
 		}
+
+		race.RaceID, err = utils.EncodeID(raceID)
+		if err != nil {
+			log.Printf("fetchLastRaces: failed to encode race ID %d: %v", raceID, err)
+			return nil, err
+		}
+		race.FirstPlaceId, err = utils.EncodeID(firstPlaceId)
+		if err != nil {
+			log.Printf("fetchLastRaces: failed to encode race ID %d: %v", raceID, err)
+			return nil, err
+		}
+		race.SecondPlaceId, err = utils.EncodeID(secondPlaceId)
+		if err != nil {
+			log.Printf("fetchLastRaces: failed to encode race ID %d: %v", raceID, err)
+			return nil, err
+		}
+		race.ThirdPlaceId, err = utils.EncodeID(thirdPlaceId)
+		if err != nil {
+			log.Printf("fetchLastRaces: failed to encode race ID %d: %v", raceID, err)
+			return nil, err
+		}
+
 		race.Date = rawDate.Format("January 2, 2006")
 		races = append(races, race)
 	}
+
+	if err := rows.Err(); err != nil {
+		log.Printf("fetchLastRaces: row iteration error: %v", err)
+		return nil, err
+	}
+	fmt.Println(races)
 	return races, nil
 }
 
@@ -183,9 +219,17 @@ func fetchTop5(db *sql.DB, gender string) ([]models.HomePageRankingRider, error)
 
 	var riders []models.HomePageRankingRider
 	for rows.Next() {
-		var r models.HomePageRankingRider
-		err := rows.Scan(&r.RiderID, &r.Name, &r.Points)
+		var (
+			r models.HomePageRankingRider
+			riderID int
+		)
+		err := rows.Scan(&riderID, &r.Name, &r.Points)
 		if err != nil {
+			return nil, err
+		}
+		r.RiderID, err = utils.EncodeID(riderID)
+		if err != nil {
+			log.Printf("fetchFakeNews: failed to encode rider ID %d: %v", riderID, err)
 			return nil, err
 		}
 		riders = append(riders, r)
@@ -240,9 +284,19 @@ func fetchTopJuniors(db *sql.DB) ([]models.HomePageRankingRider, error) {
 
 	var juniors []models.HomePageRankingRider
 	for rows.Next() {
-		var r models.HomePageRankingRider
+		
+		var (
+			r models.HomePageRankingRider
+			riderID int
+		)
+
 		err := rows.Scan(&r.RiderID, &r.Name, &r.Points)
 		if err != nil {
+			return nil, err
+		}
+		r.RiderID, err = utils.EncodeID(riderID)
+		if err != nil {
+			log.Printf("fetchTopJuniors: failed to encode riderID %d: %v", riderID, err)
 			return nil, err
 		}
 		juniors = append(juniors, r)
@@ -309,8 +363,8 @@ func FetchTop100Riders(db *sql.DB) ([]models.RidersTop100, error) {
 	}
 	defer rows.Close()
 
-	ridersMap := make(map[int]*models.RidersTop100)
-	riderRaceSeen := make(map[int]map[string]bool)
+	ridersMap := make(map[string]*models.RidersTop100)
+	riderRaceSeen := make(map[string]map[string]bool)
 
 	for rows.Next() {
 		var (
@@ -324,24 +378,29 @@ func FetchTop100Riders(db *sql.DB) ([]models.RidersTop100, error) {
 		if err := rows.Scan(&riderID, &firstName, &lastName, &team, &points, &raceName, &position, &raceRank); err != nil {
 			return nil, err
 		}
+		encodedID, err := utils.EncodeID(riderID)
+		if err != nil {
+			log.Printf("fetchTop100Riders: failed to encode riderID %d: %v", riderID, err)
+			return nil, err
+		}
 
-		if _, exists := ridersMap[riderID]; !exists {
-			ridersMap[riderID] = &models.RidersTop100{
-				RiderID:   riderID,
+		if _, exists := ridersMap[encodedID]; !exists {
+			ridersMap[encodedID] = &models.RidersTop100{
+				RiderID:   encodedID,
 				FirstName: firstName,
 				LastName:  lastName,
 				Team:      team,
 				Points:    points,
 				LastRaces: []models.RiderRaceResult{},
 			}
-			riderRaceSeen[riderID] = make(map[string]bool)
+			riderRaceSeen[encodedID] = make(map[string]bool)
 		}
 
 		if raceName.Valid && position.Valid {
 			key := raceName.String + "|" + position.String
-			if !riderRaceSeen[riderID][key] {
-				riderRaceSeen[riderID][key] = true
-				ridersMap[riderID].LastRaces = append(ridersMap[riderID].LastRaces, models.RiderRaceResult{
+			if !riderRaceSeen[encodedID][key] {
+				riderRaceSeen[encodedID][key] = true
+				ridersMap[encodedID].LastRaces = append(ridersMap[encodedID].LastRaces, models.RiderRaceResult{
 					RaceName: raceName.String,
 					Position: position.String,
 				})
@@ -422,12 +481,12 @@ func SearchRidersByNameOrTeam(db *sql.DB, q string) ([]models.RidersTop100, erro
 	}
 	defer rows.Close()
 
-	ridersMap := make(map[int]*models.RidersTop100)
+	ridersMap := make(map[string]*models.RidersTop100)
 
 	for rows.Next() {
 		var (
 			riderID                          int
-			firstName, lastName, team       string
+			firstName, lastName, team        string
 			points                           float64
 			raceName, position               sql.NullString
 			raceRank                         sql.NullInt32
@@ -437,10 +496,16 @@ func SearchRidersByNameOrTeam(db *sql.DB, q string) ([]models.RidersTop100, erro
 		if err != nil {
 			return nil, err
 		}
+		
+		encodedID, err := utils.EncodeID(riderID)
+		if err != nil {
+			log.Printf("SearchRidersByNameOrTeam: failed to encode riderID %d: %v", riderID, err)
+			return nil, err
+		}
 
-		if _, exists := ridersMap[riderID]; !exists {
-			ridersMap[riderID] = &models.RidersTop100{
-				RiderID:   riderID,
+		if _, exists := ridersMap[encodedID]; !exists {
+			ridersMap[encodedID] = &models.RidersTop100{
+				RiderID:   encodedID,
 				FirstName: firstName,
 				LastName:  lastName,
 				Team:      team,
@@ -450,7 +515,7 @@ func SearchRidersByNameOrTeam(db *sql.DB, q string) ([]models.RidersTop100, erro
 		}
 
 		if raceName.Valid && position.Valid {
-			ridersMap[riderID].LastRaces = append(ridersMap[riderID].LastRaces, models.RiderRaceResult{
+			ridersMap[encodedID].LastRaces = append(ridersMap[encodedID].LastRaces, models.RiderRaceResult{
 				RaceName: raceName.String,
 				Position: position.String,
 			})
